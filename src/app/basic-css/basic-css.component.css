@@ -1,0 +1,66 @@
+/* Universal selector */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* class selector */
+.common{
+    color: red;
+}
+/* id selector */
+#word{
+    text-align: center;
+}
+
+/* 1. Descendant combinator  */
+/* div p{
+    background-color: yellow;
+} */
+
+ /* Child combinator (>)  */
+/* div > p{
+background-color: yellow;
+} */
+
+/* Next sibling combinator (+) */
+/* div + p{
+background-color: yellow;
+} */
+
+
+/*  Subsequent-sibling combinator (~)  */
+/* div ~ p{
+    background-color: yellow;
+} */
+
+a:link{
+    text-decoration: none;
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color:pink
+}
+a:active{
+    color:blue
+}
+a.highlight:hover{
+    font-size: 50px;
+    color: red;
+}
+div:hover{
+    background-color: red;
+}
+
+p:first-child{
+    font-size: 30px;
+}
+
+span{
+    display: none;
+}
+p:hover span{
+    display: block;
+}
