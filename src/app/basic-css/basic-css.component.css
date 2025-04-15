@@ -1,15 +1,16 @@
 /* Universal selector */
-*{
-    font-family: 'Courier New', Courier, monospace;
+* {
+  font-family: "Courier New", Courier, monospace;
+  padding: opx, 30px, 0px, 30px;
 }
 
 /* class selector */
-.common{
-    color: red;
+.common {
+  color: red;
 }
 /* id selector */
-#word{
-    text-align: center;
+#word {
+  text-align: center;
 }
 
 /* 1. Descendant combinator  */
@@ -17,7 +18,7 @@
     background-color: yellow;
 } */
 
- /* Child combinator (>)  */
+/* Child combinator (>)  */
 /* div > p{
 background-color: yellow;
 } */
@@ -27,40 +28,110 @@ background-color: yellow;
 background-color: yellow;
 } */
 
-
 /*  Subsequent-sibling combinator (~)  */
 /* div ~ p{
     background-color: yellow;
 } */
 
-a:link{
-    text-decoration: none;
-    color: red;
+a:link {
+  text-decoration: none;
+  color: red;
 }
-a:visited{
-    color: green;
+a:visited {
+  color: green;
 }
-a:hover{
-    color:pink
+a:hover {
+  color: pink;
 }
-a:active{
-    color:blue
+a:active {
+  color: blue;
 }
-a.highlight:hover{
+/* a.highlight:hover{
     font-size: 50px;
     color: red;
-}
-div:hover{
+} */
+/* div:hover{
     background-color: red;
+} */
+
+/* p:first-child{
+    font-size: 30px;
+} */
+
+span {
+  display: none;
+}
+p:hover span {
+  display: block;
 }
 
-p:first-child{
+p i:first-child {
+  color: red;
+}
+p:first-child i {
+  color: blue;
+}
+p::first-line {
+  font-variant: small-caps;
+}
+p::first-letter {
+  font-size: xx-large;
+}
+.h1::before {
+  content: "🔥 ";
+  color: red;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+::marker {
+  color: red;
+  font-size: 25px;
+}
+::selection {
+  color: red;
+  background-color: aqua;
+}
+/* Child Pseudo Class */
+p:first-child {
+  color: red;
+}
+p:nth-child(3) {
+  color: red;
+}
+p:nth-child(n+3){
+    color: green;
+}
+p:nth-child(3n){
     font-size: 30px;
 }
+/* p:nth-child(3n+1){
+    background-color: yellow;
+} */
 
-span{
-    display: none;
+/* p:nth-child(-n+3){
+    background-color: red;
+} */
+
+/* p:nth-child(even){
+    background-color: aqua;
+} */
+/* p:nth-child(odd){
+    background-color: aqua;
+} */
+
+/* p:last-child{
+    color: red;
+} */
+
+p:nth-last-child(5){
+color: red;
 }
-p:hover span{
-    display: block;
-}
+
+/*  The :last-of-type selector
+ */
+ /* p:last-of-type{
+color: aqua;
+ }
+ h1:last-of-type{
+    color: brown;
+ } */
