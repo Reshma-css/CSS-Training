@@ -1,0 +1,99 @@
+/* p{
+    background-color: blue;
+    padding: 20px;
+}
+span{
+ background-color: red;
+ color: white;
+ padding: 20px;
+}
+p.ex-1{
+    display: none   ;
+}
+p.ex-2{
+display: inline;
+}
+p.ex-3{
+    display: block;
+}
+p.ex-4{
+    display: inline-block;
+}
+p.ex-5{
+display: flex;
+}
+p.ex-5{
+    display: grid;
+} */
+
+/* div.static{ */
+/* position: static; */
+/* position: relative;
+left: 30px;
+border: 1px solid green
+} 
+div.fixed{
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    border:1px solid green
+}  
+div.relative{
+position: relative;
+width: 400px;
+height: 200px;
+border: 3px solid green;
+}
+div.absolute{
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    width: 200px;
+    height: 100px;
+    border:3px solid green
+}
+.sticky{
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+    background-color: antiquewhite;
+    border: 2px solid red;
+} */
+ .container{
+    position: relative;
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+ }
+ .T-left{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 18px;
+ }
+ .R-left{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 18px;
+ }
+ .B-left{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+ }
+ .B-right{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 18px;
+ }
+ .center{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+ }

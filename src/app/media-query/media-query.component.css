@@ -1,0 +1,50 @@
+/* .container{
+    height: 50wh;
+    width:50%;
+    background-color: tan;
+    border: 1px solid black;
+    display: flex;
+}
+.items1{
+    flex-direction: row;
+    flex: 50%;
+}
+.items2{
+    flex-direction: row;
+    flex: 50%;
+}
+
+@media screen and (max-width : 992px){
+   .container{
+    background-color: green;
+   }
+}
+@media screen and (max-width : 600px){
+   .container{
+    background-color: rgb(38, 0, 128);
+   }
+} */
+
+/* responsive page layout */
+.column{
+    float: left;
+    width: 20%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+   @media screen and (max-width : 992px) {
+    .column{
+        width: 50%;
+    }
+   }
+   @media screen and (max-width : 600px) {
+    .column{
+        width: 100%;
+    }
+   }

@@ -42,13 +42,35 @@ width: 100px;
     /* align-items: flex-start; */
     /* align-items: flex-end; */
     /* align-items: stretch; */
-    align-items: baseline;
+    align-items: baseline   ;
 }
-.align-items>div{
+/* .align-items>div{
     margin: 10px;
     padding: 2px;
     width: 110px;
     line-height: 75px;
     background-color: white;
     text-align: center;
+} */
+.flex-container1{
+    display: flex;
+    flex-direction: row;
+}
+.flex-item-left{
+background-color: gray;
+padding: 10px;
+flex: 50%;
+}
+.flex-item-right{
+background-color: blue;
+padding: 10px;
+flex: 50%;
+}
+@media (max-width : 800px) {
+    .flex-container1{
+        flex-direction: column;
+    }
+    .flex-item-right{
+        background-color: green;
+    }
 }

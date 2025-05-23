@@ -1,0 +1,31 @@
+/* .details{
+    border-collapse: collapse;
+    width: 100px;
+}
+table, td, th {
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    text-align: left;
+  }
+  td {
+    height: 50px;
+    vertical-align: bottom;
+  } */
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even){background-color: geen;}
