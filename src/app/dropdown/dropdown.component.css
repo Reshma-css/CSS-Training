@@ -1,0 +1,80 @@
+.dropbtn{
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: beige;
+    min-height: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdownContent a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+.dropdown:hover .dropdownContent{
+    display: block;
+}
+.dropdownContent a:hover{
+    background-color: #f1f1f1;
+}
+div.gallery{
+    border: 1px solid #ccc;
+}
+div.gallery:hover{
+   border: 1px solid #777;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+.responsive{
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+*{
+    box-sizing: border-box;
+}
+@media only screen and (max-width:700px){
+    .responsive{
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width:500px){
+    .responsive{
+        width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  h1{
+    counter-reset:subsection;
+
+  }
+  h1::before{
+    counter-increment: section;
+    content:"Section " counter(section) ". "
+  }
+  h2::before{
+    counter-increment: subsectiob;
+    content: counter(section) "." counter(subsection) " ";
+  }
