@@ -10,6 +10,8 @@ import { DispalyPropertyComponent } from './dispaly-property/dispaly-property.co
 import { ZIndexComponent } from './z-index/z-index.component';
 import { CombinatorsComponent } from './combinators/combinators.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { WebsiteLayoutComponent } from './website-layout/website-layout.component';
+import { CssTransformsComponent } from './css-transforms/css-transforms.component';
 
 export const routes: Routes = [
     {path:'',component:BasicCSSComponent},
@@ -23,4 +25,6 @@ export const routes: Routes = [
     {path:'z-index',component:ZIndexComponent},
     {path:'combinators',component:CombinatorsComponent},
     {path:'dropdown',component:DropdownComponent},
+    {path:'web',component:WebsiteLayoutComponent},
+    {path:'css-transforms',component:CssTransformsComponent},
 ];
