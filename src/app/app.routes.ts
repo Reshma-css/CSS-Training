@@ -12,6 +12,7 @@ import { CombinatorsComponent } from './combinators/combinators.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { WebsiteLayoutComponent } from './website-layout/website-layout.component';
 import { CssTransformsComponent } from './css-transforms/css-transforms.component';
+import { FlexboxComponent } from './flexbox/flexbox.component';
 
 export const routes: Routes = [
     {path:'',component:BasicCSSComponent},
@@ -27,4 +28,5 @@ export const routes: Routes = [
     {path:'dropdown',component:DropdownComponent},
     {path:'web',component:WebsiteLayoutComponent},
     {path:'css-transforms',component:CssTransformsComponent},
+    {path:'css-flexbox',component:FlexboxComponent},
 ];
